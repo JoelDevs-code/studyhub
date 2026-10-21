@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import '../App.css'; 
-import "../dist/style.css";
+// import "../dist/style.css";
 import '../assets/fonts/flaticon/css/all.css';
 import '../assets/fonts/flaticon/css/all.min.css';
 

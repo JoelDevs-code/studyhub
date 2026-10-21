@@ -1,5 +1,6 @@
 import {BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell} from "recharts";
-import "../dist/style.css"; import "../App.css"
+// import "../dist/style.css"; 
+import "../App.css"
 // const data = [
 //   { product: "1st Semester", sales: 978, color: "#93c5fd" },
 //   { product: "2nd Semester", sales: 640, color: "blue" },
