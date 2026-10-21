@@ -33,55 +33,55 @@
       "id": "downloads",
       "label": "My Downloads",
       "icon": "fa fa-download",
-      "path": "/My Downloads"
+      "path": "/my-downloads"
     },
     {
       "id": "courseMaterials",
       "label": "Course Materials",
       "icon": "fas fa-book-open",
-      "path": "/dashboard/course-materials"
+      "path": "/course-materials"
     },
     {
       "id": "pastQuestions",
       "label": "Past Questions",
       "icon": "fa-regular fa-clipboard",
-      "path": "/dashboard/past-questions"
+      "path": "/past-questions"
     },
     {
       "id": "videoTutorials",
       "label": "Video Tutorials",
       "icon": "fas fa-tv",
-      "path": "/dashboard/video-tutorials"
+      "path": "/video-tutorials"
     },
     {
       "id": "projects",
       "label": "Projects",
       "icon": "fa-regular fa-folder-open",
-      "path": "/dashboard/projects"
+      "path": "/projects"
     },
     {
       "id": "sourceCode",
       "label": "Source Code",
       "icon": "fa fa-code",
-      "path": "/dashboard/source-code"
+      "path": "/source-code"
     },
     {
       "id": "textToSpeech",
       "label": "Text to Speech",
       "icon": "fa fa-microphone-alt",
-      "path": "/dashboard/text-to-speech"
+      "path": "/text-to-speech"
     },
     {
       "id": "analytics",
       "label": "Analytics",
       "icon": "fa fa-chart-line",
-      "path": "/dashboard/analytics"
+      "path": "/analytics"
     },
     {
       "id": "settings",
       "label": "Settings",
       "icon": "fa fa-cog",
-      "path": "/dashboard/settings"
+      "path": "/settings"
     },
     {
       "id": "logout",
@@ -130,7 +130,7 @@
         "icon": "fa fa-book-open",
         "color": "text-purple-500", "icon_bg": "bg-purple-500",
         "unit": "",
-        "background": "bg-purple-100"
+        "background": "bg-purple-50"
       },
       {
         "id": "stat-past-questions",
@@ -141,7 +141,7 @@
         "icon": "fa fa-clipboard-list",
         "color": "text-green-500", "icon_bg": "bg-green-500",
         "unit": "",
-        "background": "bg-green-100"
+        "background": "bg-green-50"
       },
       {
         "id": "stat-video-tutorials",
@@ -152,7 +152,7 @@
         "icon": "fa fa-play",
         "color": "text-blue-500", "icon_bg": "bg-blue-500",
         "unit": "",
-        "background": "bg-blue-100"
+        "background": "bg-blue-50"
       },
       {
         "id": "stat-projects",
@@ -163,7 +163,7 @@
         "icon": "fa fa-folder-open",
         "color": "text-red-500", "icon_bg": "bg-red-500",
         "unit": "",
-        "background": "bg-red-100"
+        "background": "bg-red-50"
       },
       {
         "id": "stat-source-code",
@@ -174,7 +174,7 @@
         "icon": "fa fa-code",
         "color": "text-blue-500", "icon_bg": "bg-blue-500",
         "unit": "",
-        "background": "bg-blue-100"
+        "background": "bg-blue-50"
       },
       {
         "id": "stat-text-to-speech",
@@ -185,7 +185,7 @@
         "icon": "fa fa-microphone-alt",
         "color": "text-yellow-500", "icon_bg": "bg-yellow-500",
         "unit": "",
-        "background": "bg-yellow-100"
+        "background": "bg-yellow-50"
       }
     ],
     "academicProgressOverview": {
@@ -272,6 +272,8 @@
   },
 
 
+
+  
 
   "courseMaterials": [
     {
@@ -366,7 +368,7 @@
         "value" : 500,
         "report" : "Total Course Materials",
         "record": "Across all Departments",
-        "background": "bg-blue-100",
+        "background": "bg-blue-50",
         "color": "bg-blue-500"
       },
       {
@@ -374,7 +376,7 @@
         "value" : 46,
         "report" : "Materials Dwonloaded",
         "record": "This Month",
-        "background": "bg-green-100",
+        "background": "bg-green-50",
         "color": "bg-green-500"
       },
       {
@@ -382,7 +384,7 @@
         "value" : 12,
         "report" : "Newly Added",
         "record": "This month",
-        "background": "bg-yellow-100",
+        "background": "bg-yellow-50",
         "color": "bg-yellow-500"
       },
       {
@@ -390,7 +392,7 @@
         "value" : "87%",
         "report" : "Completed Courses",
         "record": "Semester Coverage",
-        "background": "bg-purple-100",
+        "background": "bg-purple-50",
         "color": "bg-purple-500"
       }
       ]
@@ -425,7 +427,7 @@
         "value" : 87,
         "report" : "Total Dwonloads",
         "record": "All time",
-        "background": "bg-blue-100",
+        "background": "bg-blue-50",
         "color": "bg-blue-500"
       },
       {
@@ -433,7 +435,7 @@
         "value" : 25,
         "report" : "Completed Dwonloads",
         "record": "This Month",
-        "background": "bg-green-100",
+        "background": "bg-green-50",
         "color": "bg-green-500"
       },
       {
@@ -441,7 +443,7 @@
         "value" : 4,
         "report" : "In Progress",
         "record": "Currently downloading",
-        "background": "bg-yellow-100",
+        "background": "bg-yellow-50",
         "color": "bg-yellow-500"
       },
       {
@@ -449,7 +451,7 @@
         "value" : "2.45 GB",
         "report" : "Total Size",
         "record": "All Download files",
-        "background": "bg-purple-100",
+        "background": "bg-purple-50",
         "color": "bg-purple-500"
       }
       ]
@@ -491,9 +493,9 @@
           "doc_type" : "PDF",
           "doc_size" : "1.5MB",
           "doc_status" : "completed",
-          "doc_text_status" : "text-green-500",
+          "doc_text_status" : "text-green-400",
           "doc_status_icon" : "fa-regular fa-circle-check",
-          "doc_bg" : "bg-green-100",
+          "doc_bg" : "bg-green-50",
           "doc_icon_color" : "text-red-500",
           "doc_icon_bg" : "bg-red-100",
           "doc_icon_status" : "text-green-500",
@@ -508,9 +510,9 @@
           "doc_type" : "PDF",
           "doc_size" : "1.2MB",
           "doc_status" : "Failed",
-          "doc_text_status" : "text-red-500",
+          "doc_text_status" : "text-red-400",
           "doc_status_icon" : "fa fa-cancel",
-          "doc_bg" : "bg-red-100",
+          "doc_bg" : "bg-red-50",
           "doc_icon_color" : "text-red-500",
           "doc_icon_bg" : "bg-red-100",
           "doc_icon_status" : "text-red-500",
@@ -525,9 +527,9 @@
           "doc_type" : "Docx",
           "doc_size" : "25KB",
           "doc_status" : "completed",
-          "doc_text_status" : "text-green-500",
+          "doc_text_status" : "text-green-400",
           "doc_status_icon" : "fa-regular fa-circle-check",
-          "doc_bg" : "bg-green-100",
+          "doc_bg" : "bg-green-50",
           "doc_icon_color" : "text-blue-500",
           "doc_icon_bg" : "bg-blue-100",
           "doc_icon_status" : "text-green-500",
@@ -542,9 +544,9 @@
           "doc_type" : "EXC",
           "doc_size" : "1.5MB",
           "doc_status" : "In Progress",
-          "doc_text_status" : "text-yellow-500",
+          "doc_text_status" : "text-yellow-400",
           "doc_status_icon" : "fa-regular fa-clock",
-          "doc_bg" : "bg-yellow-100",
+          "doc_bg" : "bg-yellow-50",
           "doc_icon_color" : "text-green-500",
           "doc_icon_bg" : "bg-green-100",
           "doc_icon_status" : "text-yellow-500",
@@ -554,14 +556,48 @@
         },
         {
           "doc_icon": "fa fa-play",
-          "doc_title": "Statistics for Computing.mp4",
+          "doc_title": "System Architecture.mp4",
+          "doc_label" : "Video Tutorial",
+          "doc_type" : "MP4",
+          "doc_size" : "15.9MB",
+          "doc_status" : "completed",
+          "doc_text_status" : "text-green-400",
+          "doc_status_icon" : "fa-regular fa-circle-check",
+          "doc_bg" : "bg-green-50",
+          "doc_icon_color" : "text-purple-500",
+          "doc_icon_bg" : "bg-purple-100",
+          "doc_icon_status" : "text-red-500",
+          "doc_view_icon" : "fa-regular fa-folder-open",
+          "doc_action_icon" : "fa fa-ellipsis-v",
+          "doc_view_action_totake" : "Retry Download"
+        },
+        {
+          "doc_icon": "fa-regular fa-file-archive",
+          "doc_title": "E-Learning Management System.zip",
+          "doc_label" : "course material",
+          "doc_type" : "ZIP",
+          "doc_size" : "12.5MB",
+          "doc_status" : "In Progress",
+          "doc_text_status" : "text-yellow-400",
+          "doc_status_icon" : "fa-regular fa-clock",
+          "doc_bg" : "bg-yellow-50",
+          "doc_icon_color" : "text-green-500",
+          "doc_icon_bg" : "bg-green-100",
+          "doc_icon_status" : "text-yellow-500",
+          "doc_view_icon" : "fa-regular fa-pause-circle",
+          "doc_action_icon" : "fa fa-ellipsis-v",
+          "doc_view_action_totake" : "Pause Donwload"
+        },
+        {
+          "doc_icon": "fa fa-play",
+          "doc_title": "Use of Library.mp4",
           "doc_label" : "Video Tutorial",
           "doc_type" : "MP4",
           "doc_size" : "15.9MB",
           "doc_status" : "Failed",
-          "doc_text_status" : "text-red-500",
+          "doc_text_status" : "text-red-400",
           "doc_status_icon" : "fa fa-cancel",
-          "doc_bg" : "bg-red-100",
+          "doc_bg" : "bg-red-50",
           "doc_icon_color" : "text-purple-500",
           "doc_icon_bg" : "bg-purple-100",
           "doc_icon_status" : "text-red-500",

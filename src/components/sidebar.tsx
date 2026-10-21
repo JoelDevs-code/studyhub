@@ -35,18 +35,18 @@ function sideBar(){
     <>
       <aside className="sidebar__section bg-white" id='sidebar$section'>
         <div className="sidebar__section_wrapper flex flex-col">
-          <header className="sidebar__header flex items-center justify-between px-1">
-            <div className="sidebar__logo flex items-center cursor-pointer" id='sidebar$logo' 
+          <header className="sidebar__header flex items-center justify-between">
+            <div className="sidebar__logo flex items-center cursor-pointer px-1" id='sidebar$logo' 
               onClick={reload_dashboard}>
               <i className="fa fa-graduation-cap text-3xl text-blue-600 fa-bounce"></i>
-              <h3 className='text-xl font-bold mt_4 px_2 text-blue-950'>StudyHub</h3>
+              <h3 className='text-xl font-bold mt-1 px-2 text-blue-950'>StudyHub</h3>
             </div>
-            <button className="toggle-sidebar items-center none" id='toggle_sidebar'>
+            {/* <button className="toggle-sidebar items-center none" id='toggle_sidebar'>
               <i className="fa fa-bars"></i><i className="fa fa-close"></i>
-            </button>
+            </button> */}
           </header>
 
-          <nav className="main_sidebar_navigation px-1 py-1" id='sidebar$nav'>
+          <nav className="main_sidebar_navigation" id='sidebar$nav'>
             <ul className="main_sidebar_navigation_wrapper flex flex-col">
               {navigation.map((navlist, index)=>(
                 <li key={navlist.label} className="hover:bg-blue-600 hover:text-white">

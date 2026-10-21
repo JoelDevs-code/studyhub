@@ -1,10 +1,11 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 *{
-  margin: 0; padding: 0;
+  /* margin: 0; padding: 0; */
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: poppins-light;
-  outline: none; border: none;
+  outline: none; 
+  /* border: none; */
   list-style: none;
 }
 
@@ -39,11 +40,14 @@
 }
 
 .sidebar__header{
+  padding: 0 1rem;
   width: 100% !important; height: 3.5rem !important;
   border-bottom: 0.1rem rgba(211, 211, 211, 0.473) solid;
 }
 
 .sidebar__logo h3{font-family: poppins;}
+
+.main_sidebar_navigation_wrapper{padding: 0.5rem 1rem;}
 
 .main_sidebar_navigation_wrapper li{
   line-height: 2.7rem;
@@ -84,15 +88,15 @@
   height: 3.5rem; width: 100% !important;
   border-bottom: 0.1rem rgba(211, 211, 211, 0.473) solid;
 }
-.main__section_header_wrapper{height: 3.5rem;}
+.main__section_header_wrapper{height: 3.5rem; padding: 1.5rem 2rem;}
 
 .main_page_label h3{font-family: poppins;}
 
 .search_form{
   align-items: center;
   border-radius: 0.5rem;
-  padding: 0.1rem 0.5rem;
   width: 25rem;
+  padding: 0.5rem 0.5rem;
   background: rgba(211, 211, 211, 0.195);
 }
 
@@ -240,7 +244,6 @@
 
 .download_table{
   text-align: left;
-  padding: 1rem;
   border: 0.1rem #9999993d solid;
   border-radius: 0.5rem !important;
   width: 100% !important;
@@ -259,7 +262,7 @@
 
 .status_wrapper{
   border-radius: 0.3rem;
-  width: 9rem !important;
+  width: 7rem !important;
 }
 
 .download-icon-col{
