@@ -34,14 +34,14 @@ function header(){
 
   return (
     <>
-      <header className="main__section_header bg-white" id='main_sec_header'>
-        <div className="main__section_header_wrapper flex items-center justify-between gap-1">
+      <header className="main__section_header h-15 bg-white" id='main_sec_header'>
+        <div className="main__section_header_wrapper flex items-center justify-between gap-5 h-full relative py-2 px-7">
           <div className="main_page_label">
             <h3 className='text-black text-xl' id='labelTxt'>{activeLable}</h3>
           </div>
-          <form action="" className='flex gap-3 search_form'>
-            <button className='cursor-pointer'><i className="icon-search text-blue-600"></i></button>
-            <input type="text" placeholder='Search for courses, materials..........' name="" id="search_input" />
+          <form action="" className='flex gap-3 items-center search_form h-full'>
+            <button className='cursor-pointer h-full'><i className="icon-search text-blue-600"></i></button>
+            <input type="text" className='h-full' placeholder='Search for courses, materials..........' name="" id="search_input" />
           </form>
           <div className="notify_profile_wrapper flex items-center gap-7">
             <div className="notification_section relative">
@@ -57,11 +57,12 @@ function header(){
                 <i className="fa fa-angle-down text-xs" id='profile_caret'></i>
                 <i className="fa-regular fa-user text-base profile_iconx" title='view profile'></i>
               </div>
-              <div id='profile_drop' className="profile_display px-5 py-2 absolute bg-white">
+              <div id='profile_drop' className="profile_display px-5 py-5 absolute bg-white">
                 <ul>
-                  {/* <li>
-                    <label className='font-bold' htmlFor="profile_display">Name:</label> <span>Bulus Joel</span>
-                  </li> */}
+                  <div className='flex items-center gap-1.5 bg-blue-100 px-2 py-3 rounded-lg text-blue-600'>
+                    <i className="fa-regular fa-user font-bold" aria-hidden="true"></i>
+                    <span className='font-bold'>Student Info</span>
+                  </div>
                   <li>
                     <label className='font-bold' htmlFor="profile_display">Matric No:</label> 
                     <span> {ProfileData.matric_no}</span>

@@ -35,7 +35,7 @@ function sideBar(){
     <>
       <aside className="sidebar__section bg-white" id='sidebar$section'>
         <div className="sidebar__section_wrapper flex flex-col">
-          <header className="sidebar__header flex items-center justify-between">
+          <header className="sidebar__header h-15 flex items-center justify-between">
             <div className="sidebar__logo flex items-center cursor-pointer px-1" id='sidebar$logo' 
               onClick={reload_dashboard}>
               <i className="fa fa-graduation-cap text-3xl text-blue-600 fa-bounce"></i>

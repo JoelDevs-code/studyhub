@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+.active{
+  background: blue;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  transition: 0.2s all ease-in-out;
+}
+
+.none{
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .text-to-speech-container{
+    flex-wrap: wrap;
+  }
+  .tts-main-aside{
+    width: 100%;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .tts-test-samples{
+    width: 20rem;
+  }
+  .tts-test-samples-h{width: 100%;}
+  
+  .tts-test-samples ul{
+    overflow-y: scroll;
+    height: 10rem;
+    width: 18rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .text-to-speech-container{padding: 2rem 0.5rem;}
+
+
+  .conversion-controls{
+    flex-wrap: wrap;
+  }
+
+  .tts-form-header{flex-wrap: wrap; gap: 1rem;}
+
+  .tts-main-aside{
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .conversion-controls{
+    justify-content: center;
+  }
+  .controls--card{width: 100%;}
+
+  .tsst-top-col-txt h2{font-size: 0.9rem;}
+  .tsst-top-col-txt p{font-size: 0.7rem;}
+  .b-wrp-col{font-size: 0.5rem;}
+
+  .tsst-top-col-img{width: 20rem !important;}
+
+  .tts-benefits{width: 100%;}
+  .voices-container{width: 100%;}
+  .selection-ppv select{width: 85%;}
+
+  .tts-test-samples{
+    width: 100%;
+  }
+  .tts-test-samples-h{width: 100%;}
+  
+  .tts-test-samples ul{
+    overflow-y: scroll;
+    height: 10rem;
+    width: 97% !important;
+  }
+
+}
+
+@media (max-width: 457px) {
+  .tsst-top-col-txt h2{font-size: 0.7rem;}
+  .tsst-top-col-txt p{font-size: 0.5rem;}
+  .b-wrp-col{font-size: 0.4rem;}
+}

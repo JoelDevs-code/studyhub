@@ -41,7 +41,8 @@
 
 .sidebar__header{
   padding: 0 1rem;
-  width: 100% !important; height: 3.5rem !important;
+  width: 100% !important; 
+  /* height: 3.5rem !important; */
   border-bottom: 0.1rem rgba(211, 211, 211, 0.473) solid;
 }
 
@@ -85,10 +86,11 @@
 }
 
 .main__section_header{
-  height: 3.5rem; width: 100% !important;
+  /* height: 3.8rem;  */
+  width: 100% !important;
   border-bottom: 0.1rem rgba(211, 211, 211, 0.473) solid;
 }
-.main__section_header_wrapper{height: 3.5rem; padding: 1.5rem 2rem;}
+/* .main__section_header_wrapper{padding: 2.5rem 2rem;} */
 
 .main_page_label h3{font-family: poppins;}
 
@@ -202,7 +204,7 @@
   font-size: 0.8rem;
   border-radius: 0.5rem;
   border: 0.1rem #99999959 solid;
-  top: 3.5rem; width: 12rem; left: -2rem;
+  top: 3.5rem; width: 15rem; left: -5rem;
 }
 
 .toggle{
@@ -333,6 +335,8 @@
   }
   .menu--btn{display: flex !important;}
   .menu--btn #closeMenu{display: none !important;}
+
+  .notify_profile_wrapper{gap: 0.5rem;}
 }
 
 @media screen and (max-width: 950px) {
@@ -382,6 +386,10 @@
   }
   
   .profile_iconx{display: block !important;}
+
+  .profile_display{
+    margin-left: -6.5rem;
+  }
 
   #profile_caret{display: none;}
   .profile_con_img{display: none;}
@@ -590,6 +598,9 @@
 
 
 @media screen and (max-width: 705px) {
+
+  .notify_profile_wrapper{gap: 0.5rem;}
+
   .dashboard_operations_grid_wrapper {
     display: flex;
     gap: 0.65rem;

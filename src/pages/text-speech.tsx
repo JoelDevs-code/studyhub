@@ -1,5 +1,5 @@
 
-import '../App.css'; 
+import '../App.css'; import '../css/tts.css'
 import '../assets/fonts/flaticon/css/all.css'
 import '../assets/fonts/flaticon/css/all.min.css'
 
@@ -9,6 +9,39 @@ import tts_img from "../assets/images/m-a.png"
 
 import tts_test_one from "../data/tts_test_1.txt"
 import tts_test_two from "../data/tts_test_1.txt"
+import { useState } from 'react';
+
+  function startToggle(){
+    const text_typing = document.getElementById("text_typing");
+    const text_upload = document.getElementById("text_upload");
+    const text_input = document.getElementById("text_input");
+    const upload_input = document.getElementById("upload_input");
+    text_typing?.classList.remove("active");
+    text_upload?.classList.add("active");
+
+    text_input?.classList.add("none");
+    upload_input?.classList.remove("none");
+    
+  }
+
+  function reverseToggle(){
+    const text_typing = document.getElementById("text_typing");
+    const text_upload = document.getElementById("text_upload");
+    const text_input = document.getElementById("text_input");
+    const upload_input = document.getElementById("upload_input");
+
+    text_typing?.classList.add("active");
+    text_upload?.classList.remove("active");
+
+    upload_input?.classList.add("none");
+    text_input?.classList.remove("none");
+
+  }
+
+  // const [name, setName] = useState("");
+  // const handleClear = ()=>{setName("")};
+
+  // const handleSubmit = (event:React.FormEvent<HTMLFormElement>) =>{event.preventDefault()}
 
 function texttospeech(){
 
@@ -26,7 +59,7 @@ function texttospeech(){
                   Listen to study materials, notes and documents anytime, anywhere.
                   Choose from multiple voices and languages for a better learning experience.
                 </p>
-                <div className='flex gap-4 my-3 text-xs'>
+                <div className='flex gap-4 my-3 text-xs b-wrp-col'>
                   <div className='flex items-center gap-1.5'>
                     <i className='fa fa-bolt-lightning text-amber-400'></i><span>Fast & Acurate</span>
                   </div>
@@ -51,21 +84,27 @@ function texttospeech(){
                 </div>
                 <div className="btn-conversion-type h-13 flex items-center rounded-lg gap-1 border text-sm 
                 border-mauve-300">
-                  <button className='px-2 cursor-pointer'>Text Input</button>
-                  <button className='px-2 cursor-pointer'>Upload File</button>
+                  <button type='button' className='px-2 cursor-pointer h-full  items-center active flex' onClick={reverseToggle} id='text_typing'>
+                    Text Input
+                  </button>
+                  <button type='button' className='px-2 cursor-pointer h-full items-center flex' onClick={startToggle} id='text_upload'>
+                    Upload File
+                  </button>
                 </div>
               </div>
               <div className="input-types border border-mauve-300 my-3 h-40 rounded-lg">
-                <textarea className='w-full h-full px-4 py-4 resize-none'
+                <textarea id='text_input' className='w-full h-full px-4 py-4 resize-none' 
+                // onChange={(e)=> setName(e.target.value)}
                 placeholder='Place your text here.....(e.g lecture notes, articles, study materials)' />
-                {/* <input type="file" className='w-full h-full'
-                placeholder='Place your text here.....(e.g lecture notes, articles, study materials)' /> */}
+                <input id='upload_input' type="file" className='w-full h-full none px-4 py-4 cursor-pointer'
+                // onChange={(e)=> setName(e.target.value)}
+                placeholder='Place your text here.....(e.g lecture notes, articles, study materials)' />
               </div>
               <div className='flex justify-between items-center px-1'>
                 <div className="text-count">
                   <label htmlFor="">0</label><span>/5000 characters</span>
                 </div>
-                <button className='flex items-center gap-2.5 cursor-pointer'>
+                <button className='flex items-center gap-2.5 cursor-pointer' type='button'>
                   <i className="fa-regular fa-trash-can text-sm"></i><span>Clear</span>
                 </button>
               </div>
@@ -164,13 +203,13 @@ function texttospeech(){
             </div>
 
             <div className="tts-test-samples flex flex-col gap-3 rounded-lg px-5 py-5 border-mauve-300 border">
-              <div className="tts-test-samples flex flex-col gap-1 border-b border-b-mauve-300 pb-5">
+              <div className="tts-test-samples-h flex flex-col gap-1 border-b border-b-mauve-300 pb-5">
                 <h5 className='font-bold text-blue-600'>Quick Test Samples</h5>
                 <p className='text-sm text-mauve-600'>
                   Try these samples test to see how it works, drag to upload.
                 </p>
               </div>
-              <ul className='flex-flex-col gap-2'>
+              <ul className='flex flex-col gap-2'>
                 <iframe src={tts_test_one} draggable="true" /><br />
                 <iframe src={tts_test_two} draggable="true" />
               </ul>
