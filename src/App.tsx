@@ -17,6 +17,8 @@ import SideBar from './components/sidebar';
 import HomePage from './components/home_page'
 import Header from "./components/header"
 
+import TexttoSpeech from "./pages/text-speech"
+
 import studyHubData from "./data/studyHubData.json";
 
 function App() {
@@ -31,6 +33,7 @@ function App() {
   return (
     <>
     {loading && <Loader />} 
+
       <main className="main__dashbaord_section w-full px-0 py-0" id='main$dashbaord'>
         <section className="main__dashboard_wrapper flex" aria-label='dashboard container'>
           <SideBar />
@@ -340,6 +343,19 @@ function App() {
                   </section>
 
 
+                  <div className="main_content_footer bg-blue-100 flex justify-center">
+                    <div className='px-1 py_5'><span className=''>&copy; Bulus Joel Project</span></div>
+                  </div>
+                </section>
+              </>
+            } />
+
+
+            <Route path='/text-to-speech' element={
+              <>
+                <section className="main__section_wrapper w-full" id='main_wrapper'>
+                  <Header />
+                  <TexttoSpeech />
                   <div className="main_content_footer bg-blue-100 flex justify-center">
                     <div className='px-1 py_5'><span className=''>&copy; Bulus Joel Project</span></div>
                   </div>
